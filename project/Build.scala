@@ -1,9 +1,8 @@
 import sbt._
-import sbt.{Build => SbtBuild}
 import Keys._
 import org.sbtidea.SbtIdeaPlugin._
 
-object Build extends SbtBuild {
+object Build extends Build {
   val commonSettings = Seq(
     ideaExcludeFolders := ".idea" :: ".idea_modules" :: Nil,
     version := "1.0",
